@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Permanent+Marker" >
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+      integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+          <h1>Mem🧠ry</h1>
+      </header>
+
+      <section class="score-panel">
+        <ul class="stars">
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+        </ul>
+
+        <span class="moves">0</span> Move(s)
+
+          <div class="timer">
+          </div>
+
+          <div class="restart" onclick=startGame()>
+          <i class="fa fa-repeat"></i>
+        </div>
+      </section>
+      <ul class="deck" id="card-deck">
+          <li class="card" id="thomas">
+            <img id="thomas" class="frontCard" src="/assets/thomas.gif" />
+          </li>
+          <li class="card" >
+            <img class="frontCard" src="/assets/black4.png" />
+          </li>
+          <li class="card match" id="ladyJustice">
+            <img class="frontCard" src="/assets/ladyJustice.jpg" />
+          </li>
+          <li class="card" id="hula" >
+            <img class="frontCard" src="/assets/hula.gif" />
+          </li>
+          <li class="card" id="black5">
+            <img class="frontCard" src="/assets/black5.jpg" />
+          </li>
+          <li class="card match" id="ladyJustice">
+            <img class="frontCard" src="/assets/ladyJustice.jpg" />
+          </li>
+          <li class="card" id="guy">
+            <img id="guy" class="frontCard" src="/assets/guy.gif" />
+          </li>
+          <li class="card" id="black1">
+            <img class="frontCard" src="/assets/black1.png" />
+          </li>
+          <li class="card" id="thomas">
+            <img id="thomas" class="frontCard" src="/assets/thomas.gif" />
+          </li>
+          <li class="card" id="kimono">
+            <img class="frontCard" src="/assets/kimonotocat.png" />
+          </li>
+          <li class="card" id="guy">
+            <img id="guy" class="frontCard" src="/assets/guy.gif" />
+          </li>
+          <li class="card" id="kimono">
+            <img class="frontCard" src="/assets/kimonotocat.png" />
+          </li>
+          <li class="card open show" id="hula">
+            <img class="frontCard" src="/assets/hula.gif" />
+          </li>
+          <li class="card" id="black1">
+            <img class="frontCard" src="/assets/black1.png" />
+          </li>
+          <li class="card" id="plane">
+            <img class="frontCard" src="/assets/black4.png" />
+          </li>
+          <li class="card" id="black5">
+            <img class="frontCard" src="/assets/black5.jpg" />
+          </li>
+      </ul>
+      <div id="popup1" class="overlay">
+          <div class="popup">
+              <h2>Congratulations 🎉</h2>
+              <a class="close" href=# >×</a>
+              <div class="content-1">
+                  You won! 🎉🎉
+              </div>
+              <div class="content-2">
+                  <p>You made <span id=finalMove> </span> moves </p>
+                  <p>in <span id=totalTime> </span> </p>
+                  <p>Rating:  <span id=starRating></span></p>
+              </div>
+              <button id="play-again"onclick="playAgain()">
+                  Play again 😄</a>
+              </button>
+          </div>
+      </div>
+
+    </div>
+    <script src="main.js"></script>
+    <!-- <link rel="stylesheet" href="css/enhance.css" /> -->
+
+  </body>
+</html>
